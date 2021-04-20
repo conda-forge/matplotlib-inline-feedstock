@@ -1,5 +1,5 @@
 {% set name = "matplotlib-inline" %}
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: eff59462c3d578b3488408e8f56da51715cf298500542738df0bc5a6500ec2c0
+  sha256: f41d5ff73c9f5385775d5c0bc13b424535c8402fe70ea8210f93e11f3683993e
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
@@ -20,7 +20,6 @@ requirements:
     - pip
   run:
     - python  >=3.6
-    - ipython
     - traitlets
 
 test:
@@ -30,6 +29,7 @@ test:
   requires:
     - pip
     - matplotlib-base
+    - ipython
   commands:
     - pip check
 
