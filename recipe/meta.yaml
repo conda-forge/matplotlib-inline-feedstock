@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
@@ -34,12 +34,12 @@ test:
     - pip check
 
 about:
-  home: https://github.com/martinRenou/matplotlib-inline
+  home: https://github.com/ipython/matplotlib-inline
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
   summary: 'Inline Matplotlib backend for Jupyter'
-  dev_url: https://github.com/martinRenou/matplotlib-inline
+  dev_url: https://github.com/ipython/matplotlib-inline
 
 extra:
   recipe-maintainers:
