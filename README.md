@@ -1,7 +1,7 @@
 About matplotlib-inline
 =======================
 
-Home: https://github.com/martinRenou/matplotlib-inline
+Home: https://github.com/ipython/matplotlib-inline
 
 Package license: BSD-3-Clause
 
@@ -9,7 +9,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/matplotlib-inli
 
 Summary: Inline Matplotlib backend for Jupyter
 
-Development: https://github.com/martinRenou/matplotlib-inline
+Development: https://github.com/ipython/matplotlib-inline
 
 Current build status
 ====================
@@ -117,5 +117,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@Carreau](https://github.com/Carreau/)
+* [@SylvainCorlay](https://github.com/SylvainCorlay/)
 * [@martinRenou](https://github.com/martinRenou/)
 
