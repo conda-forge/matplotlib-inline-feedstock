@@ -1,5 +1,5 @@
 {% set name = "matplotlib-inline" %}
-{% set version = "0.1.3" %}
+{% set version = "0.1.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a04bfba22e0d1395479f866853ec1ee28eea1485c1d69a6faf00dc3e24ff34ee
+  sha256: a728d796a1a44265b310340ef04ba8aba4e89dcb76dfdd1272becab4923dd867
 
 build:
   noarch: python
