@@ -147,5 +147,6 @@ Feedstock Maintainers
 
 * [@Carreau](https://github.com/Carreau/)
 * [@SylvainCorlay](https://github.com/SylvainCorlay/)
+* [@fperez](https://github.com/fperez/)
 * [@martinRenou](https://github.com/martinRenou/)
 
