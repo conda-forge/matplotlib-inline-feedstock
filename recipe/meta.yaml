@@ -6,20 +6,20 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
   sha256: 8423b23ec666be3d16e16b60bdd8ac4e86e840ebd1dd11a30b9f117f2fa0ab90
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python  >=3.6
+    - python {{ python_min }}
     - pip
   run:
-    - python  >=3.6
+    - python >={{ python_min }}
     - traitlets
 
 test:
@@ -30,6 +30,7 @@ test:
     - pip
     - matplotlib-base
     - ipython
+    - python {{ python_min }}
   commands:
     - pip check
 
